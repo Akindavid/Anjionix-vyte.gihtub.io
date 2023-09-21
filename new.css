@@ -230,5 +230,9 @@ body {
         margin-bottom: 30px;
     }
 
+    .carousel-padding {
+        margin-top: 10px;
+    }
+
 }
 
