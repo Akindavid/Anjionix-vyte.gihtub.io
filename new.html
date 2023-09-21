@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="new.css">
     
-    <script>
+    <!-- <script>
       document.addEventListener("DOMContentLoaded") (function(){
         document.querySelector(".nav-button").addEventListener(blur) (function(event){
           var screenWidth = window.innerWidth;
@@ -17,8 +17,17 @@
           } 
         });
       });
-    </script>
+    </script> -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' shrink-to-fit="no">
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("i5o4rp3dqdFnH8_CH");
+   })();
+</script>
     <title>Document</title>
 </head>
 <body>
@@ -398,20 +407,20 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="mb-3">
-                  <input type="text" class="form-control" required placeholder="Your Full Hame">
+                  <input type="text" class="form-control" id="name" required placeholder="Your Full Hame">
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
-                  <input type="email" class="form-control" required placeholder="Your Email Here">
+                  <input type="email" class="form-control" id="email" required placeholder="Your Email Here">
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
-                  <textarea rows="3" required class="form-control" placeholder="Your Query Here"></textarea>
+                  <textarea rows="3" required class="form-control" id="message" placeholder="Your Query Here"></textarea>
                 </div>
               </div>
-              <Botton class="btn btn-warning btn-lg btn-block mt-3">Send Now</Botton>
+              <Botton class="btn btn-warning btn-lg btn-block mt-3" onclick="sendMail()">Send Now</Botton>
             </div>
           </form>
         </div>
