@@ -32,10 +32,10 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 25px;
+    font-weight: bold !important;
 }
 
 .carousel-caption p {
-    width: 60%;
     margin: auto;
     font-size: 18px;
     line-height: 1.9;
@@ -218,7 +218,7 @@ body {
         bottom: 125px;
     }
     .carousel-caption h5{
-        font-size: 17px;
+        font-size: 35px;
     }
     .carousel-caption a{
         padding: 10px 15px;
